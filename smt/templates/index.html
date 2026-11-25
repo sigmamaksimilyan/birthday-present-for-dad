@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Папа, с днём родения!</title>
+
+
+
+</head>
+
+    <body>
+        <div class = "stars-bg"></div>
+        <h1 class="wave-text">Привет</h1>
+        <h2 class="wave-text">Папа, поздравлю тебя с днём рождения</h2>
+        <h3 class="wave-text">Я сделал для тебя небольшой подарок =></h3>
+        <a href="{% url 'present' %}" class="cake-link">
+            <img class = "tortik" src="{% static 'images/tortik.png' %}" alt = "Тортик">
+        </a>
+        <h3>↑ Нажми на тортик ↑</h3>
+    </body>
+</html>
